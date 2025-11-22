@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="registration-form">
+        <div class="container">
+            <div class="about">
+                <div class="about__inner">
+                    <a href="#" class="aboutlogo"><img src="img/logo.svg" alt="Logo" width="186" height="35"></a>
+                    <h3 class="about__h3">Возможности онлайн приложения</h3>
+
+                    <ul class="about__list">
+                        <li class="list__item">
+                            <img src="img/choice.svg" alt="choice" width="18" height="18">
+                            <p class="list__item__p">Клиенты записываются 24/7 в удобное для вас время</p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/choice.svg" alt="choice" width="18" height="18">
+                            <p class="list__item__p">Создавайте, редактируйте, просматривайте записи</p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/choice.svg" alt="choice" width="18" height="18">
+                            <p class="list__item__p">Масштаб журнала записи 5, 10, 15 и 30 минут.</p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/choice.svg" alt="choice" width="18" height="18">
+                            <p class="list__item__p">Мотивируйте клиентов приходить чаще и тратить больше</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="reg">
+                <a href="#" class="reg-logo"><img src="img/logo2.svg" alt="Logo" class="reg-logo-img"></a>
+                <div class="reg__inner">
+                    <h5 class="reg__h5">Регистрация</h5>
+                    <form action="#" class="form-box">
+                        <div class="input-group">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" name="name" id="name" placeholder="Введите имя" required
+                                class="form-input" autocomplete="off">
+                        </div>
+                        <div class="input-group">
+                            <label for="surname" class="form-label">Фамилия</label>
+                            <input type="text" name="surname" id="surname" placeholder="Введите фамилию" required
+                                class="form-input" autocomplete="off">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone" class="form-label">Номер телефона</label>
+                            <input type="tel" name="phone" id="phone" placeholder="+7 (000) 00-00-00"
+                                pattern="[\+][7]\s?[\(]\d{3}[\)]\s?\d{2}[\-]\d{2}[\-]\d{2}" required class="form-input"
+                                autocomplete="off">
+                        </div>
+                        <div class=" input-group">
+                            <label for="email" class="form-label">Электронная почта</label>
+                            <input type="email" name="email" id="email" placeholder="Введите электронную почту" required
+                                class="form-input" autocomplete="off">
+                        </div>
+                        <div class="input-group">
+                            <label for="password" class="form-label">Пароль</label>
+                            <input type="password" name="password" id="password" placeholder="Введите пароль" required
+                                class="form-input" autocomplete="off">
+                            <button class="eye-toggle-btn" onclick="alert('visibility changed')"><img
+                                    src="img/EyeSlash.svg" alt="EyeSlash" width="19" height="15"
+                                    class="eye-toggle-img"></button>
+                        </div>
+                        <div class="input-group">
+                            <label for="password" class="form-label">Подтвердить пароль</label>
+                            <input type="password" name="password" id="password" placeholder="Введите пароль" required
+                                class="form-input" autocomplete="off">
+                            <button class="eye-toggle-btn" onclick="alert('visibility changed')"><img
+                                    src="img/EyeSlash.svg" alt="EyeSlash" width="19" height="15"
+                                    class="eye-toggle-img"></button>
+                        </div>
+                        <div class="reg-agreement__container">
+                            <button type="submit" class="reg-btn"
+                                onclick="alert('reg successfull')">Зарегистрироваться</button>
+                            <div class="agreement-checkbox__container">
+                                <input type="checkbox" name="agree" id="agree" required class="checkbox">
+                                <label for="agree" class="checkbox-label">Нажимая «Зарегистрироваться»,
+                                    вы соглашаетесь на обработку персональных данных и условия сервиса</label>
+                            </div>
+                        </div>
+                        <div class="autorization__container">
+                            <p class="autorization__p">Есть аккаунт?</p>
+                            <a href="#" class="autorization__a">Войти</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
