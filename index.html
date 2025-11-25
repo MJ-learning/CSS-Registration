@@ -21,9 +21,9 @@
 <body>
     <div class="registration-form">
         <div class="container">
-            <div class="about">
+            <aside class="about">
                 <div class="about__inner">
-                    <a href="#" class="aboutlogo"><img src="img/logo.svg" alt="Logo" width="186" height="35"></a>
+                    <a href="#" class="about-logo"><img src="img/logo.svg" alt="Logo" width="186" height="35"></a>
                     <h3 class="about__h3">Возможности онлайн приложения</h3>
 
                     <ul class="about__list">
@@ -46,50 +46,50 @@
                     </ul>
 
                 </div>
-            </div>
-            <div class="reg">
+            </aside>
+            <main class="reg">
                 <a href="#" class="reg-logo"><img src="img/logo2.svg" alt="Logo" class="reg-logo-img"></a>
                 <div class="reg__inner">
                     <h5 class="reg__h5">Регистрация</h5>
                     <form action="#" class="form-box">
-                        <div class="input-group">
+                        <section class="input-group">
                             <label for="name" class="form-label">Имя</label>
                             <input type="text" name="name" id="name" placeholder="Введите имя" required
                                 class="form-input" autocomplete="off">
-                        </div>
-                        <div class="input-group">
+                        </section>
+                        <section class="input-group">
                             <label for="surname" class="form-label">Фамилия</label>
                             <input type="text" name="surname" id="surname" placeholder="Введите фамилию" required
                                 class="form-input" autocomplete="off">
-                        </div>
-                        <div class="input-group">
+                        </section>
+                        <section class="input-group">
                             <label for="phone" class="form-label">Номер телефона</label>
                             <input type="tel" name="phone" id="phone" placeholder="+7 (000) 00-00-00"
                                 pattern="[\+][7]\s?[\(]\d{3}[\)]\s?\d{2}[\-]\d{2}[\-]\d{2}" required class="form-input"
                                 autocomplete="off">
-                        </div>
-                        <div class=" input-group">
+                        </section>
+                        <section class=" input-group">
                             <label for="email" class="form-label">Электронная почта</label>
                             <input type="email" name="email" id="email" placeholder="Введите электронную почту" required
                                 class="form-input" autocomplete="off">
-                        </div>
-                        <div class="input-group">
+                        </section>
+                        <section class="input-group">
                             <label for="password" class="form-label">Пароль</label>
                             <input type="password" name="password" id="password" placeholder="Введите пароль" required
                                 class="form-input" autocomplete="off">
-                            <button class="eye-toggle-btn" onclick="alert('visibility changed')"><img
+                            <button type="button" class="eye-toggle-btn" onclick="alert('visibility changed')"><img
                                     src="img/EyeSlash.svg" alt="EyeSlash" width="19" height="15"
                                     class="eye-toggle-img"></button>
-                        </div>
-                        <div class="input-group">
+                        </section>
+                        <section class="input-group">
                             <label for="password" class="form-label">Подтвердить пароль</label>
-                            <input type="password" name="password" id="password" placeholder="Введите пароль" required
-                                class="form-input" autocomplete="off">
-                            <button class="eye-toggle-btn" onclick="alert('visibility changed')"><img
+                            <input type="password" name="confirm_password" id="confirm_password"
+                                placeholder="Введите пароль" required class="form-input" autocomplete="off">
+                            <button type="button" class="eye-toggle-btn" onclick="alert('visibility changed')"><img
                                     src="img/EyeSlash.svg" alt="EyeSlash" width="19" height="15"
                                     class="eye-toggle-img"></button>
-                        </div>
-                        <div class="reg-agreement__container">
+                        </section>
+                        <section class="reg-agreement__container">
                             <button type="submit" class="reg-btn"
                                 onclick="alert('reg successfull')">Зарегистрироваться</button>
                             <div class="agreement-checkbox__container">
@@ -97,14 +97,14 @@
                                 <label for="agree" class="checkbox-label">Нажимая «Зарегистрироваться»,
                                     вы соглашаетесь на обработку персональных данных и условия сервиса</label>
                             </div>
-                        </div>
-                        <div class="autorization__container">
+                        </section>
+                        <section class="autorization__container">
                             <p class="autorization__p">Есть аккаунт?</p>
                             <a href="#" class="autorization__a">Войти</a>
-                        </div>
+                        </section>
                     </form>
                 </div>
-            </div>
+            </main>
         </div>
     </div>
 </body>
